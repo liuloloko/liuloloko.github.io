@@ -61,14 +61,24 @@
             line-height: 25vh;
         }
 
-        .bottom{
+        .bottom {
             background: #ececec;
             position: fixed;
             bottom: 0;
             width: 100%;
             height: 50px;
             text-align: center;
-            line-height:50px;
+            line-height: 50px;
+        }
+
+        .bg {
+            background:rgba(0,0,0,0.5);
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            display: none;
         }
     </style>
 </head>
@@ -84,6 +94,7 @@
     <div class="box color2">
         <div class="in_box2">坚持学习</div>
     </div>
+    <div class="bg"></div>
     <div class="bottom">底部</div>
 </body>
 
@@ -95,6 +106,9 @@
     $(".btn2").click(function () {
         $(".color2").css("display", "block")
         $(".color1").css("display", "none")
+    })
+    $(".bottom").click(function () {
+        $(".bg").css("display", "none")
     })
     var all = [0, 1, 5, 4, 3, 2, 1, 2, 3, 4, 0]
     var result = 5
