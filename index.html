@@ -1005,8 +1005,8 @@
 
 <body>
     <div class="big_box">
-        <button class="btn1">1</button>
-        <button class="btn2">2</button>
+        <button class="btn1" onclick="getDeviceInfo()">1</button>
+        <button class="btn2" onclick="getUUID()">2</button>
     </div>
     <div class="box color1">
         <div class="in_box1">自己学习</div>
@@ -1153,10 +1153,12 @@
             <li></li>
         </ul>
     </div>
-    <div class="bottom">底部</div>
+    <div class="bottom" onclick="getDeviceInfo()">底部</div>
 </body>
 
 <script>
+
+
     $(".btn1").click(function () {
         $(".color1").css("display", "block")
         $(".color2").css("display", "none")
@@ -1340,5 +1342,4 @@
     //forEach的时候并没有生成新的副本
     
 </script>
-
 </html>
