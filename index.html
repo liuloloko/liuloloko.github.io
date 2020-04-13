@@ -1009,10 +1009,10 @@
         <button class="btn2" onclick="getUUID()">2</button>
     </div>
     <div class="box color1">
-        <div class="in_box1">自己学习</div>
+        <div class="in_box1">1234</div>
     </div>
     <div class="box color2">
-        <div class="in_box2">坚持学习</div>
+        <div class="in_box2">5678</div>
     </div>
     <div class="bg">
         <ul>
@@ -1156,7 +1156,7 @@
     <div class="bottom" onclick="getDeviceInfo()">底部</div>
 </body>
 
-<!-- <script>
+<script>
 
 
     $(".btn1").click(function () {
@@ -1341,25 +1341,5 @@
     });
     //forEach的时候并没有生成新的副本
     
-</script> -->
-<script>
-    function getDeviceInfo(){
-        plus.device.getInfo({
-            success:function(e){
-                alert('getDeviceInfo success: '+JSON.stringify(e));
-            },
-            fail:function(e){
-                alert('getDeviceInfo failed: '+JSON.stringify(e));
-            }
-        });
-    }
-
-    
-//获取设备的唯一标识号
-function getUUID(){
-	alert("UUID: "+plus.device.uuid);
-}
-var appid = plus.runtime.appid;
-alert('应用的 appid 为：' + appid);
 </script>
 </html>
